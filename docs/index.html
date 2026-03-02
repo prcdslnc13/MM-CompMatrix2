@@ -64,7 +64,7 @@
       </div>
       <div class="card">
         <h3>Admin View</h3>
-        <p>Password-protected. Add, edit, delete machines. CSV import/export. Changes persist in browser localStorage.</p>
+        <p>Password-protected. Add, edit, delete machines. CSV and JSON import/export. Changes persist in browser localStorage.</p>
       </div>
     </div>
 
@@ -101,7 +101,7 @@
         <tr><td><code>SearchInput</code></td><td>src/components/SearchInput.jsx</td><td>Fuzzy search bar with dropdown results</td></tr>
         <tr><td><code>DetailCard</code></td><td>src/components/DetailCard.jsx</td><td>Compatibility detail card for selected machine</td></tr>
         <tr><td><code>PublicTable</code></td><td>src/components/PublicTable.jsx</td><td>Read-only filterable table</td></tr>
-        <tr><td><code>AdminTable</code></td><td>src/components/AdminTable.jsx</td><td>Editable table with add/edit/delete/CSV controls</td></tr>
+        <tr><td><code>AdminTable</code></td><td>src/components/AdminTable.jsx</td><td>Editable table with add/edit/delete/CSV/JSON controls</td></tr>
         <tr><td><code>EditRow</code></td><td>src/components/EditRow.jsx</td><td>Inline editing form within table row</td></tr>
       </tbody>
     </table>
@@ -114,7 +114,7 @@
       <tbody>
         <tr><td><code>src/data/compatLevels.js</code></td><td><code>CC</code> (colors/labels/icons), <code>COMPAT_OPTS</code>, <code>FIELDS</code></td></tr>
         <tr><td><code>src/data/scoring.js</code></td><td><code>norm()</code> text normalizer, <code>score()</code> fuzzy matcher</td></tr>
-        <tr><td><code>src/hooks/useMachines.js</code></td><td>Machine state: load, save, addRow, saveEdit, deleteRow, resetDB, CSV import/export</td></tr>
+        <tr><td><code>src/hooks/useMachines.js</code></td><td>Machine state: load, save, addRow, saveEdit, deleteRow, resetDB, CSV &amp; JSON import/export</td></tr>
       </tbody>
     </table>
 
@@ -126,7 +126,7 @@
       </thead>
       <tbody>
         <tr><td><code>full</code></td><td><span class="badge badge-full">CAD + CAM + Control</span></td><td>Full design, toolpath, and machine control</td></tr>
-        <tr><td><code>cam</code></td><td><span class="badge badge-cam">CAM Only</span></td><td>Design + GCode export, no direct control</td></tr>
+        <tr><td><code>cam</code></td><td><span class="badge badge-cam">CAD + CAM</span></td><td>Design + GCode export, no direct control</td></tr>
         <tr><td><code>maybe</code></td><td><span class="badge badge-maybe">Limited</span></td><td>Proprietary/non-standard, unverified</td></tr>
         <tr><td><code>depends</code></td><td><span class="badge badge-depends">Varies</span></td><td>Depends on installed firmware</td></tr>
         <tr><td><code>unlikely</code></td><td><span class="badge badge-unlikely">Not Compatible</span></td><td>Proprietary system, not supported</td></tr>

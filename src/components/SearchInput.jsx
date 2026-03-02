@@ -42,7 +42,7 @@ export default function SearchInput({ machines, onSelect }) {
         <div style={{ marginBottom: 16, background: "#f9fafb", borderRadius: 10, padding: "16px 20px", border: "1px solid #e5e7eb" }}>
           <p style={{ fontSize: 13, color: "#374151", margin: "0 0 12px", lineHeight: 1.5 }}>MillMage compatibility depends on your CNC's <strong>firmware / controller</strong>:</p>
           <div style={{ marginBottom: 10 }}><div style={{ fontSize: 13, fontWeight: 700, color: "#059669", marginBottom: 3 }}>{"\u2713"} Full Support</div><div style={{ fontSize: 13, color: "#374151" }}>GRBL {"\u2264"}1.1 {"\u00B7"} grblHAL {"\u00B7"} GRBL-STM {"\u00B7"} FluidNC {"\u00B7"} Smoothieware (Labs)</div></div>
-          <div><div style={{ fontSize: 13, fontWeight: 700, color: "#d97706", marginBottom: 3 }}>{"\u25D0"} CAM Only</div><div style={{ fontSize: 13, color: "#374151" }}>Mach3/4 {"\u00B7"} LinuxCNC {"\u00B7"} UCCNC {"\u00B7"} Duet/RRF {"\u00B7"} Masso</div></div>
+          <div><div style={{ fontSize: 13, fontWeight: 700, color: "#d97706", marginBottom: 3 }}>{"\u25D0"} CAD + CAM</div><div style={{ fontSize: 13, color: "#374151" }}>Mach3/4 {"\u00B7"} LinuxCNC {"\u00B7"} UCCNC {"\u00B7"} Duet/RRF {"\u00B7"} Masso</div></div>
         </div>
       )}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>

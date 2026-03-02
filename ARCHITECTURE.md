@@ -5,7 +5,7 @@
 A Vite + React single-page app that shows CNC machine compatibility with MillMage software. Two modes:
 
 - **Public** — Read-only search and table view (default)
-- **Admin** — Password-protected editing, add/delete rows, CSV import/export
+- **Admin** — Password-protected editing, add/delete rows, CSV import/export, JSON import/export
 
 ## Data Flow
 
@@ -85,7 +85,7 @@ No host Node.js required. All workflows run inside Docker containers.
 | `public/data/machines.json` | 311 machines — default database |
 | `src/main.jsx` | React root |
 | `src/App.jsx` | Mode toggle, auth gate, layout |
-| `src/hooks/useMachines.js` | Load/save/CRUD state management |
+| `src/hooks/useMachines.js` | Load/save/CRUD state management, CSV & JSON import/export |
 | `src/data/compatLevels.js` | CC colors/labels/icons |
 | `src/data/scoring.js` | Fuzzy search |
 | `src/components/PasswordPrompt.jsx` | Admin password dialog |

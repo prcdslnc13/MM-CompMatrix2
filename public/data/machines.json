@@ -1140,48 +1140,48 @@
     "model": "Snapmaker 2.0 A150",
     "firmware": "other_builtin",
     "controller": "Snapmaker proprietary (Marlin-based)",
-    "compatLevel": "maybe",
-    "notes": "Proprietary controller. Community testing ongoing."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Snapmaker",
     "model": "Snapmaker 2.0 A250",
     "firmware": "other_builtin",
     "controller": "Snapmaker proprietary (Marlin-based)",
-    "compatLevel": "maybe",
-    "notes": "Proprietary controller. Community testing ongoing."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Snapmaker",
     "model": "Snapmaker 2.0 A350",
     "firmware": "other_builtin",
     "controller": "Snapmaker proprietary (Marlin-based)",
-    "compatLevel": "maybe",
-    "notes": "Proprietary controller. Community testing ongoing."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Snapmaker",
     "model": "Snapmaker Artisan",
     "firmware": "other_builtin",
     "controller": "Snapmaker proprietary",
-    "compatLevel": "maybe",
-    "notes": "Proprietary controller. Community testing ongoing."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Snapmaker",
     "model": "Snapmaker J1",
     "firmware": "other_builtin",
     "controller": "Snapmaker proprietary",
-    "compatLevel": "maybe",
-    "notes": "Proprietary controller. Community testing ongoing."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Snapmaker",
     "model": "Snapmaker Original",
     "firmware": "other_builtin",
     "controller": "Snapmaker proprietary (Marlin-based)",
-    "compatLevel": "maybe",
-    "notes": "Proprietary controller. Limited compatibility."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Ooznest",
@@ -1252,24 +1252,24 @@
     "model": "IQ Pro",
     "firmware": "other_builtin",
     "controller": "Proprietary DSP",
-    "compatLevel": "unlikely",
-    "notes": "Laguna uses proprietary control. Not compatible."
+    "compatLevel": "cam",
+    "notes": "Laguna uses proprietary control. CAM Only."
   },
   {
     "brand": "Laguna Tools",
     "model": "Swift",
     "firmware": "other_builtin",
     "controller": "Proprietary DSP",
-    "compatLevel": "unlikely",
-    "notes": "Proprietary control. Not compatible."
+    "compatLevel": "cam",
+    "notes": "Proprietary control. CAM Only."
   },
   {
     "brand": "Laguna Tools",
     "model": "SmartShop II",
     "firmware": "other_builtin",
     "controller": "Proprietary",
-    "compatLevel": "unlikely",
-    "notes": "Proprietary control. Not compatible."
+    "compatLevel": "cam",
+    "notes": "Proprietary control. CAM Only."
   },
   {
     "brand": "Shop Sabre",
@@ -1292,8 +1292,8 @@
     "model": "IS Series",
     "firmware": "other_builtin",
     "controller": "Proprietary (Centroid)",
-    "compatLevel": "unlikely",
-    "notes": "Industrial Centroid controller. Not compatible."
+    "compatLevel": "cam",
+    "notes": "Industrial Centroid controller. CAM Only."
   },
   {
     "brand": "CNC4Newbie",
@@ -1539,9 +1539,9 @@
     "brand": "Powermatic",
     "model": "PM-2x4SPK",
     "firmware": "other_builtin",
-    "controller": "Proprietary",
-    "compatLevel": "unlikely",
-    "notes": "Proprietary controller. Not compatible."
+    "controller": "RichAuto DSP",
+    "compatLevel": "cam",
+    "notes": "RichAuto DSP control. CAM Only."
   },
   {
     "brand": "Shaper",
@@ -1596,8 +1596,8 @@
     "model": "Maverick",
     "firmware": "other_builtin",
     "controller": "Proprietary",
-    "compatLevel": "unlikely",
-    "notes": "Proprietary controller. Not compatible."
+    "compatLevel": "cam",
+    "notes": "Proprietary controller. CAM Only."
   },
   {
     "brand": "Probotix",
@@ -1686,14 +1686,6 @@
     "controller": "DSP 0501 (DDCSV)",
     "compatLevel": "cam",
     "notes": "DDCS-based controller. CAM Only \u2014 use LinuxCNC G-Code flavor."
-  },
-  {
-    "brand": "Donek Tools",
-    "model": "Drag Knife CNC",
-    "firmware": "grbl",
-    "controller": "GRBL (typically on Shapeoko/X-Carve)",
-    "compatLevel": "full",
-    "notes": "If running on a GRBL machine, full compatibility."
   },
   {
     "brand": "Longmill",

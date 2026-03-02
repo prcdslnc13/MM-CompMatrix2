@@ -7,7 +7,7 @@ import AdminTable from "./components/AdminTable";
 import PasswordPrompt from "./components/PasswordPrompt";
 
 export default function App() {
-  const { machines, loading, saveStatus, addRow, saveEdit, deleteRow, resetDB, exportCSV, importCSV } = useMachines();
+  const { machines, loading, saveStatus, addRow, saveEdit, deleteRow, resetDB, exportCSV, importCSV, exportJSON, importJSON } = useMachines();
   const [mode, setMode] = useState("public");
   const [authed, setAuthed] = useState(false);
   const [showPwPrompt, setShowPwPrompt] = useState(false);
@@ -71,6 +71,8 @@ export default function App() {
             onResetDB={resetDB}
             onExportCSV={exportCSV}
             onImportCSV={importCSV}
+            onExportJSON={exportJSON}
+            onImportJSON={importJSON}
           />
         ) : (
           <PublicTable

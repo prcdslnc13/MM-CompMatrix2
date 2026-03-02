@@ -7,7 +7,7 @@ const Btn = ({ children, bg = "#f3f4f6", color = "#374151", onClick }) => (
   <button onClick={onClick} style={{ border: "none", borderRadius: 5, padding: "5px 10px", fontSize: 11, fontWeight: 600, cursor: "pointer", background: bg, color, whiteSpace: "nowrap" }}>{children}</button>
 );
 
-export default function AdminTable({ machines, tblFilter, setTblFilter, tblCompat, setTblCompat, saveStatus, onAddRow, onSaveEdit, onDeleteRow, onResetDB, onExportCSV, onImportCSV }) {
+export default function AdminTable({ machines, tblFilter, setTblFilter, tblCompat, setTblCompat, saveStatus, onAddRow, onSaveEdit, onDeleteRow, onResetDB, onExportCSV, onImportCSV, onExportJSON, onImportJSON }) {
   const [editId, setEditId] = useState(null);
   const [confirmDel, setConfirmDel] = useState(null);
 
@@ -53,6 +53,8 @@ export default function AdminTable({ machines, tblFilter, setTblFilter, tblCompa
         <Btn bg="#6366f1" color="#fff" onClick={addRow}>+ Add</Btn>
         <Btn onClick={onImportCSV}>{"\u2B06"} Import CSV</Btn>
         <Btn onClick={onExportCSV}>{"\u2B07"} Export CSV</Btn>
+        <Btn onClick={onImportJSON}>{"\u2B06"} Import JSON</Btn>
+        <Btn onClick={onExportJSON}>{"\u2B07"} Export JSON</Btn>
         <Btn bg="#fef2f2" color="#dc2626" onClick={() => { if (confirm("Reset database to defaults? All edits will be lost.")) onResetDB(); }}>Reset</Btn>
         {saveStatus === "saving" && <span style={{ fontSize: 11, color: "#6b7280" }}>Saving...</span>}
         {saveStatus === "saved" && <span style={{ fontSize: 11, color: "#059669" }}>{"\u2713"} Saved</span>}
@@ -99,7 +101,7 @@ export default function AdminTable({ machines, tblFilter, setTblFilter, tblCompa
           </tbody>
         </table>
       </div>
-      <p style={{ fontSize: 12, color: "#9ca3af", marginTop: 12 }}>Showing {filteredTable.length} of {machines.length}. Edits auto-save. Use Export CSV to download.</p>
+      <p style={{ fontSize: 12, color: "#9ca3af", marginTop: 12 }}>Showing {filteredTable.length} of {machines.length}. Edits auto-save. Use Export JSON to download.</p>
     </div>
   );
 }

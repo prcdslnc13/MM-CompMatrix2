@@ -99,6 +99,40 @@ export function useMachines() {
     a.click();
   }, [machines]);
 
+  const exportJSON = useCallback(() => {
+    const clean = machines.map(({ id, ...rest }) => rest);
+    const blob = new Blob([JSON.stringify(clean, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "machines.json";
+    a.click();
+  }, [machines]);
+
+  const importJSON = useCallback(() => {
+    const inp = document.createElement("input");
+    inp.type = "file";
+    inp.accept = ".json";
+    inp.onchange = async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      try {
+        const txt = await file.text();
+        const data = JSON.parse(txt);
+        if (!Array.isArray(data) || data.length === 0 || !data[0].brand || !data[0].model) {
+          alert("Invalid JSON: expected an array of objects with brand and model fields.");
+          return;
+        }
+        const imported = data.map((r, i) => ({ ...r, id: i }));
+        nextId.current = imported.length;
+        setMachines(imported);
+        saveToDB(imported);
+      } catch (err) {
+        alert("Failed to parse JSON file: " + err.message);
+      }
+    };
+    inp.click();
+  }, [saveToDB]);
+
   const importCSV = useCallback(() => {
     const inp = document.createElement("input");
     inp.type = "file";
@@ -132,5 +166,5 @@ export function useMachines() {
     inp.click();
   }, [saveToDB]);
 
-  return { machines, loading, saveStatus, addRow, saveEdit, deleteRow, resetDB, exportCSV, importCSV };
+  return { machines, loading, saveStatus, addRow, saveEdit, deleteRow, resetDB, exportCSV, importCSV, exportJSON, importJSON };
 }
