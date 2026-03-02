@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MM-CompMatrix2 — Documentation</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1f2937; line-height: 1.6; background: #f9fafb; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 28px; margin-bottom: 8px; color: #111827; }
+    h2 { font-size: 20px; margin: 32px 0 12px; color: #111827; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; }
+    h3 { font-size: 16px; margin: 20px 0 8px; color: #374151; }
+    p, li { font-size: 14px; margin-bottom: 8px; }
+    ul { padding-left: 24px; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    pre { background: #1f2937; color: #e5e7eb; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; margin: 12px 0; }
+    pre code { background: none; padding: 0; color: inherit; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+    th, td { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; }
+    th { background: #f9fafb; font-weight: 600; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+    .badge-full { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+    .badge-cam { background: #fffbeb; color: #d97706; border: 1px solid #fde68a; }
+    .badge-maybe { background: #f5f3ff; color: #7c3aed; border: 1px solid #ddd6fe; }
+    .badge-depends { background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }
+    .badge-unlikely { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; margin: 12px 0; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+    .subtitle { color: #6b7280; font-size: 15px; margin-bottom: 24px; }
+    a { color: #6366f1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 12px 0; margin-bottom: 8px; position: sticky; top: 0; z-index: 10; }
+    nav .container { padding: 0 20px; display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+    nav a { font-size: 13px; font-weight: 500; color: #374151; }
+    nav a:hover { color: #6366f1; }
+    nav .brand { font-weight: 700; font-size: 14px; color: #111827; margin-right: auto; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <span class="brand">MM-CompMatrix2</span>
+      <a href="#overview">Overview</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#components">Components</a>
+      <a href="#data">Data</a>
+      <a href="#deployment">Deployment</a>
+      <a href="#docker">Docker</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>MM-CompMatrix2</h1>
+    <p class="subtitle">MillMage CNC Compatibility Checker — Documentation</p>
+
+    <h2 id="overview">Overview</h2>
+    <p>A single-page web app that helps CNC users check whether their machine is compatible with MillMage software. Two views:</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Public View</h3>
+        <p>Read-only search and browsable table. Users search by machine brand/model and see a compatibility detail card.</p>
+      </div>
+      <div class="card">
+        <h3>Admin View</h3>
+        <p>Password-protected. Add, edit, delete machines. CSV import/export. Changes persist in browser localStorage.</p>
+      </div>
+    </div>
+
+    <h2 id="architecture">Architecture</h2>
+    <div class="card">
+      <h3>Tech Stack</h3>
+      <ul>
+        <li><strong>Vite 6</strong> + <strong>React 18</strong> — build and UI framework</li>
+        <li><strong>Static JSON</strong> — default machine data (<code>public/data/machines.json</code>)</li>
+        <li><strong>localStorage</strong> — persists admin edits client-side</li>
+        <li><strong>Inline styles</strong> — no CSS framework, ported from Claude WebUI artifacts</li>
+      </ul>
+    </div>
+
+    <h3>Data Flow</h3>
+    <pre><code>machines.json (311 machines, static default)
+        |
+        v
+  useMachines hook --> localStorage (admin edits saved here)
+        |
+        v
+   App.jsx (state owner)
+   |-- SearchInput + DetailCard  (search panel)
+   '-- PublicTable / AdminTable  (database table)</code></pre>
+
+    <h2 id="components">Components</h2>
+    <table>
+      <thead>
+        <tr><th>Component</th><th>File</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>App</code></td><td>src/App.jsx</td><td>Main orchestrator — mode toggle, auth gate, layout</td></tr>
+        <tr><td><code>PasswordPrompt</code></td><td>src/components/PasswordPrompt.jsx</td><td>Modal password dialog for admin access</td></tr>
+        <tr><td><code>SearchInput</code></td><td>src/components/SearchInput.jsx</td><td>Fuzzy search bar with dropdown results</td></tr>
+        <tr><td><code>DetailCard</code></td><td>src/components/DetailCard.jsx</td><td>Compatibility detail card for selected machine</td></tr>
+        <tr><td><code>PublicTable</code></td><td>src/components/PublicTable.jsx</td><td>Read-only filterable table</td></tr>
+        <tr><td><code>AdminTable</code></td><td>src/components/AdminTable.jsx</td><td>Editable table with add/edit/delete/CSV controls</td></tr>
+        <tr><td><code>EditRow</code></td><td>src/components/EditRow.jsx</td><td>Inline editing form within table row</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Shared Utilities</h3>
+    <table>
+      <thead>
+        <tr><th>Module</th><th>Exports</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>src/data/compatLevels.js</code></td><td><code>CC</code> (colors/labels/icons), <code>COMPAT_OPTS</code>, <code>FIELDS</code></td></tr>
+        <tr><td><code>src/data/scoring.js</code></td><td><code>norm()</code> text normalizer, <code>score()</code> fuzzy matcher</td></tr>
+        <tr><td><code>src/hooks/useMachines.js</code></td><td>Machine state: load, save, addRow, saveEdit, deleteRow, resetDB, CSV import/export</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="data">Data &amp; Compatibility Levels</h2>
+    <p>The database contains <strong>311 CNC machines</strong> with 5 compatibility levels:</p>
+    <table>
+      <thead>
+        <tr><th>Level</th><th>Badge</th><th>Meaning</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>full</code></td><td><span class="badge badge-full">CAD + CAM + Control</span></td><td>Full design, toolpath, and machine control</td></tr>
+        <tr><td><code>cam</code></td><td><span class="badge badge-cam">CAM Only</span></td><td>Design + GCode export, no direct control</td></tr>
+        <tr><td><code>maybe</code></td><td><span class="badge badge-maybe">Limited</span></td><td>Proprietary/non-standard, unverified</td></tr>
+        <tr><td><code>depends</code></td><td><span class="badge badge-depends">Varies</span></td><td>Depends on installed firmware</td></tr>
+        <tr><td><code>unlikely</code></td><td><span class="badge badge-unlikely">Not Compatible</span></td><td>Proprietary system, not supported</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="deployment">Deployment</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Vercel (Production)</h3>
+        <ul>
+          <li>Push to GitHub &rarr; auto-deploy</li>
+          <li>Set <code>VITE_ADMIN_PASSWORD</code> in Vercel Environment Variables</li>
+          <li>Password baked into JS at build time</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Local Development (no Node.js needed)</h3>
+        <pre><code>./docker-dev.sh                           # http://localhost:5173
+ADMIN_PASSWORD=secret ./docker-dev.sh     # custom password</code></pre>
+        <p>Runs Vite dev server inside a Docker container with hot-reload. Alternatively, if you have Node.js installed:</p>
+        <pre><code>npm install && npm run dev</code></pre>
+      </div>
+    </div>
+
+    <h2 id="docker">Docker</h2>
+    <div class="card">
+      <p><strong>No host Node.js required.</strong> All build and dev workflows run inside Docker containers.</p>
+      <table>
+        <tr><th>Image Name</th><td><code>mm-compmatrix</code></td></tr>
+        <tr><th>Tags</th><td><code>0.1.0</code> + <code>latest</code></td></tr>
+        <tr><th>Tar Export</th><td><code>mm-compmatrix.tar</code></td></tr>
+        <tr><th>Platform</th><td><code>linux/amd64</code></td></tr>
+      </table>
+
+      <h3>Scripts</h3>
+      <table>
+        <tr><th>Script</th><th>Purpose</th></tr>
+        <tr><td><code>./docker-dev.sh</code></td><td>Containerized Vite dev server with hot-reload (port 5173)</td></tr>
+        <tr><td><code>./docker-build.sh</code></td><td>Build + dual-tag the production image</td></tr>
+        <tr><td><code>./docker-build.sh --export</code></td><td>Build + export to <code>mm-compmatrix.tar</code></td></tr>
+      </table>
+
+      <h3>Build (manual)</h3>
+      <pre><code>docker build --platform linux/amd64 \
+  -t mm-compmatrix:0.1.0 \
+  -t mm-compmatrix:latest .
+
+docker save -o mm-compmatrix.tar \
+  mm-compmatrix:0.1.0 mm-compmatrix:latest</code></pre>
+
+      <h3>Run</h3>
+      <pre><code>docker run -d -p 8080:80 \
+  -e ADMIN_PASSWORD=mysecret \
+  mm-compmatrix:latest</code></pre>
+      <p>Access at <code>http://localhost:8080</code></p>
+
+      <h3>Password Injection</h3>
+      <p>The <code>docker-entrypoint.sh</code> generates <code>/usr/share/nginx/html/env.js</code> at container start, injecting the <code>ADMIN_PASSWORD</code> env var as <code>window.__ENV__.ADMIN_PASSWORD</code>.</p>
+    </div>
+
+    <hr style="margin: 40px 0 20px; border: none; border-top: 1px solid #e5e7eb;">
+    <p style="font-size: 12px; color: #9ca3af; text-align: center;">MM-CompMatrix2 v0.1.0 &mdash; Generated documentation</p>
+  </div>
+</body>
+</html>

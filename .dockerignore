@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+*.tsx
+*.txt
+docs
+ARCHITECTURE.md
+CLAUDE.md
+README.md
+docker-build.sh
+docker-dev.sh
+mm-compmatrix.tar

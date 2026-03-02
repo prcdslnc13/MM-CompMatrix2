@@ -1,0 +1,312 @@
+brand,model,firmware,controller,compatLevel,notes
+Carbide 3D,Shapeoko 5 Pro,grbl,GRBL 1.1 (Carbide Motion Controller),full,Ships with GRBL 1.1 firmware. Full CAD; CAM; and Control via USB.
+Carbide 3D,Shapeoko 5 Pro 4x4,grbl,GRBL 1.1 (Carbide Motion Controller),full,Ships with GRBL 1.1. Full compatibility.
+Carbide 3D,Shapeoko 4,grbl,GRBL 1.1 (Carbide Motion Controller),full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko 4 XL,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko 4 XXL,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko Pro,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko Pro XL,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko Pro XXL,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko 3,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko 3 XL,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko 3 XXL,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko HDM,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Shapeoko 2,grbl,GRBL (Arduino + GShield),full,Older GRBL version — may need firmware update to 1.1 for best results.
+Carbide 3D,Nomad 3,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+Carbide 3D,Nomad 883,grbl,GRBL,full,GRBL-based. Full compatibility.
+Carbide 3D,Nomad 883 Pro,grbl,GRBL,full,GRBL-based. Full compatibility.
+Inventables,X-Carve,grbl,X-Controller (GRBL),full,GRBL firmware. Full compatibility.
+Inventables,X-Carve Pro,grbl,X-Controller (GRBL),full,GRBL firmware. Full compatibility.
+Inventables,X-Carve (2021+),grbl,X-Controller (GRBL),full,Updated X-Carve still uses GRBL. Full compatibility.
+Inventables,Carvey,grbl,GRBL-based,full,GRBL-based. Full compatibility.
+Sienci Labs,LongMill MK1,grbl,GRBL (Arduino-based),full,Original LongMill runs GRBL. Full compatibility.
+Sienci Labs,LongMill MK1 30x30,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Sienci Labs,LongMill MK1 12x30,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Sienci Labs,LongMill MK2,grblhal,grblHAL (SLB controller),full,Runs grblHAL firmware. Full compatibility.
+Sienci Labs,LongMill MK2 30x30,grblhal,grblHAL (SLB controller),full,grblHAL firmware. Full compatibility.
+Sienci Labs,LongMill MK2 48x30,grblhal,grblHAL (SLB controller),full,grblHAL firmware. Full compatibility.
+Sienci Labs,LongMill MK2.5,grblhal,grblHAL (SLB controller),full,grblHAL firmware. Full compatibility.
+Sienci Labs,AltMill,grblhal,grblHAL (SLB controller),full,grblHAL firmware. Full compatibility.
+Sienci Labs,Mill One V1,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Sienci Labs,Mill One V2,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Sienci Labs,Mill One V3,grbl,GRBL,full,GRBL firmware. Full compatibility.
+OpenBuilds,LEAD CNC 1010,grbl,BlackBox (GRBL),full,BlackBox controller runs GRBL. Full compatibility.
+OpenBuilds,LEAD CNC 1515,grbl,BlackBox (GRBL),full,BlackBox controller runs GRBL. Full compatibility.
+OpenBuilds,LEAD CNC,grbl,BlackBox (GRBL),full,BlackBox controller runs GRBL. Full compatibility.
+OpenBuilds,MiniMill,grbl,BlackBox (GRBL),full,BlackBox controller runs GRBL. Full compatibility.
+OpenBuilds,WorkBee,grbl,BlackBox (GRBL),full,Typically paired with BlackBox (GRBL). Full compatibility.
+OpenBuilds,C-Beam Machine,grbl,BlackBox / xPRO (GRBL),full,GRBL-based controller. Full compatibility.
+OpenBuilds,Sphinx,grbl,BlackBox (GRBL),full,GRBL-based. Full compatibility.
+OpenBuilds,ACRO System,grbl,BlackBox (GRBL),full,GRBL-based. Full compatibility.
+Onefinity,Woodworker X-35,other_builtin,Onefinity Controller (Buildbotics-based),cam,Buildbotics-based controller. CAM Only.
+Onefinity,Woodworker X-50,other_builtin,Onefinity Controller (Buildbotics-based),cam,Buildbotics-based controller. CAM Only.
+Onefinity,Machinist X-35,other_builtin,Onefinity Controller (Buildbotics-based),cam,Buildbotics-based controller. CAM Only.
+Onefinity,Machinist X-50,other_builtin,Onefinity Controller (Buildbotics-based),cam,Buildbotics-based controller. CAM Only.
+Onefinity,Journeyman X-50,other_builtin,Onefinity Controller (Buildbotics-based),cam,Buildbotics-based controller. CAM Only.
+Onefinity,Foreman,other_builtin,Onefinity Controller (Buildbotics-based),cam,Buildbotics-based controller. CAM Only.
+Onefinity,Elite Foreman,masso,Masso G3 Controller,cam,Masso controller. MillMage can generate GCode (CAM Only) but cannot directly control it.
+Onefinity,Elite Journeyman,masso,Masso G3 Controller,cam,Masso controller. CAM Only.
+Onefinity,Elite Woodworker,masso,Masso G3 Controller,cam,Masso controller. CAM Only.
+Onefinity,Elite Machinist,masso,Masso G3 Controller,cam,Masso controller. CAM Only.
+SainSmart,Genmitsu 3018-PROVer,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+SainSmart,Genmitsu 3018-PROVer V2,grbl,GRBL 1.1,full,GRBL 1.1 firmware. Full compatibility.
+SainSmart,Genmitsu 3018-PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+SainSmart,Genmitsu 3018-MX3,grbl,GRBL,full,GRBL firmware. Full compatibility.
+SainSmart,Genmitsu CNC 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+SainSmart,Genmitsu PROVerXL 4030 V2,grbl,GRBL (customized),full,Customized GRBL. Select GRBL in MillMage device setup.
+SainSmart,Genmitsu PROVerXL 4030,grbl,GRBL (customized),full,Customized GRBL. Select GRBL in MillMage device setup.
+SainSmart,Genmitsu PROVerXL 6050,grbl,GRBL (customized),full,Customized GRBL. Full compatibility.
+SainSmart,Genmitsu PROVerXL 6050 Plus,grbl,GRBL (customized),full,Customized GRBL. Full compatibility.
+SainSmart,Genmitsu 3030-PROVer MAX,grbl,GRBL,full,GRBL firmware. Full compatibility.
+SainSmart,Genmitsu 4040-PROVer,grbl,GRBL,full,GRBL firmware. Full compatibility.
+SainSmart,Genmitsu CNC Router 1810,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,Evolution 4,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,Evolution 3,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,KL744,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,KL733,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,Revolution,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,Quantum,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,E3,grbl,GRBL,full,GRBL firmware. Full compatibility.
+BobsCNC,E4,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Masuter,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Masuter Pro,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Masuter 4040-XE,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Vasto,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Reizer 3020,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,WM-3020,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,Mega V,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,Mega V XL,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,Mega V XXL,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,Carve King 2,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,Power Route,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,Power Route XL,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Millright CNC,M3,grbl,GRBL,full,GRBL firmware. Full compatibility.
+YoraHome,Silverback 6060,grbl,GRBL,full,GRBL firmware. Full compatibility.
+YoraHome,Silverback 4040,grbl,GRBL,full,GRBL firmware. Full compatibility.
+YoraHome,Mandrill 3030,grbl,GRBL,full,GRBL firmware. Full compatibility.
+YoraHome,Mandrill 2417,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Two Trees,TTC 450,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Two Trees,TTC 6550,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Two Trees,TTC 3018 Pro,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Generic,CNC 3018,grbl,GRBL (Arduino-based),full,Most 3018 machines run GRBL. Full compatibility.
+Generic,CNC 3018-PRO,grbl,GRBL (Arduino-based),full,GRBL firmware. Full compatibility.
+Generic,CNC 1610,grbl,GRBL (Arduino-based),full,GRBL firmware. Full compatibility.
+Generic,CNC 2418,grbl,GRBL (Arduino-based),full,GRBL firmware. Full compatibility.
+Generic,CNC 3040,grbl,GRBL or Mach3 (varies),depends,Some 3040 machines use GRBL (full); others use Mach3 (CAM Only). Check your controller.
+Generic,CNC 6040,varies,Mach3 or GRBL (varies),depends,Commonly Mach3 (CAM Only). Some upgraded to GRBL (full). Check your controller.
+Generic,CNC 6090,varies,DSP / Mach3 (varies),depends,Industrial-grade desktops often use DSP or Mach3. Check your specific controller.
+MySweety,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+VEVOR,CNC 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+VEVOR,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+VEVOR,CNC 3040T,varies,Mach3 or GRBL,depends,Varies by version. Check if your controller is GRBL or Mach3.
+Mostics,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+RATTMMOTOR,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+TopDirect,CNC 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Cenoz,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+MYSWEETY,CNC Router 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+MakerMade,M2,grbl,GRBL 1.1 (Arduino Due),full,GRBL 1.1 based firmware. Full compatibility — unique chain-drive design.
+MakerMade,Maslow CNC (M2 kit),grbl,GRBL 1.1 (Due Board),full,Uses GRBL 1.1 on Arduino Due. Full compatibility.
+Maslow CNC,Maslow (Original/Classic),other_builtin,Maslow Mega (custom firmware),maybe,Original Maslow uses custom firmware on Arduino Mega. Not standard GRBL — limited compatibility.
+Avid CNC,PRO CNC 4x8,mach,Mach4 / Avid CNC Control,cam,Runs Mach4. CAM Only — export GCode and transfer to your machine.
+Avid CNC,PRO CNC 4x4,mach,Mach4 / Avid CNC Control,cam,Runs Mach4. CAM Only.
+Avid CNC,PRO CNC 5x10,mach,Mach4 / Avid CNC Control,cam,Runs Mach4. CAM Only.
+Avid CNC,PRO CNC 4x2,mach,Mach4 / Avid CNC Control,cam,Runs Mach4. CAM Only.
+Avid CNC,Benchtop PRO 2x4,mach,Mach4,cam,Runs Mach4. CAM Only.
+Avid CNC,Benchtop PRO 2x3,mach,Mach4,cam,Runs Mach4. CAM Only.
+Avid CNC,Standard CNC 4x8,mach,Mach4,cam,Runs Mach4. CAM Only.
+Avid CNC,Standard CNC 4x4,mach,Mach4,cam,Runs Mach4. CAM Only.
+ShopBot,Desktop,other_builtin,ShopBot Control Software (proprietary),unlikely,ShopBot uses proprietary control software and file format (.sbp). Not compatible with MillMage.
+ShopBot,Desktop MAX,other_builtin,ShopBot Control (proprietary),unlikely,Proprietary control. Not compatible.
+ShopBot,Buddy,other_builtin,ShopBot Control (proprietary),unlikely,Proprietary control. Not compatible.
+ShopBot,PRSalpha,other_builtin,ShopBot Control (proprietary),unlikely,Proprietary control. Not compatible.
+ShopBot,PRSstandard,other_builtin,ShopBot Control (proprietary),unlikely,Proprietary control. Not compatible.
+ShopBot,PRS,other_builtin,ShopBot Control (proprietary),unlikely,Proprietary control. Not compatible.
+Axiom,Iconic 4,other_builtin,RichAuto DSP Controller,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Axiom,Iconic 6,other_builtin,RichAuto DSP Controller,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Axiom,Iconic 8,other_builtin,RichAuto DSP Controller,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Axiom,AR4 Pro V5,other_builtin,RichAuto B18 DSP Controller,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Axiom,AR6 Pro V5,other_builtin,RichAuto B18 DSP Controller,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Axiom,AR8 Pro V5,other_builtin,RichAuto B18 DSP Controller,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Next Wave,CNC Shark HD5,other_builtin,Next Wave Ready2Control (GRBL-variant),maybe,Uses a proprietary GRBL-variant controller. Compatibility is limited and unverified — try the 30-day free trial.
+Next Wave,CNC Shark HD4,other_builtin,Next Wave Ready2Control,maybe,Proprietary GRBL-variant. Limited/unverified compatibility.
+Next Wave,CNC Shark HD3,other_builtin,Next Wave proprietary,maybe,Proprietary controller. Limited compatibility.
+Next Wave,CNC Shark HD520,other_builtin,Next Wave Ready2Control,maybe,Proprietary GRBL-variant. Limited compatibility.
+Next Wave,CNC Piranha FX,other_builtin,Next Wave proprietary,maybe,Proprietary controller. Limited compatibility.
+Next Wave,CNC Piranha XL,other_builtin,Next Wave proprietary,maybe,Proprietary controller. Limited compatibility.
+Stepcraft,D.420,uccnc,UCCNC,cam,Runs UCCNC. CAM Only — export GCode and transfer.
+Stepcraft,D.600,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Stepcraft,D.840,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Stepcraft,M.500,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Stepcraft,M.700,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Stepcraft,M.1000,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Stepcraft,Q.204,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Stepcraft,Q.408,uccnc,UCCNC,cam,Runs UCCNC. CAM Only.
+Snapmaker,Snapmaker 2.0 A150,other_builtin,Snapmaker proprietary (Marlin-based),maybe,Proprietary controller. Community testing ongoing.
+Snapmaker,Snapmaker 2.0 A250,other_builtin,Snapmaker proprietary (Marlin-based),maybe,Proprietary controller. Community testing ongoing.
+Snapmaker,Snapmaker 2.0 A350,other_builtin,Snapmaker proprietary (Marlin-based),maybe,Proprietary controller. Community testing ongoing.
+Snapmaker,Snapmaker Artisan,other_builtin,Snapmaker proprietary,maybe,Proprietary controller. Community testing ongoing.
+Snapmaker,Snapmaker J1,other_builtin,Snapmaker proprietary,maybe,Proprietary controller. Community testing ongoing.
+Snapmaker,Snapmaker Original,other_builtin,Snapmaker proprietary (Marlin-based),maybe,Proprietary controller. Limited compatibility.
+Ooznest,WorkBee 750x750,grbl,GRBL (Duet optional),full,Typically GRBL with BlackBox. If using Duet; CAM Only.
+Ooznest,WorkBee 1000x1000,grbl,GRBL (Duet optional),full,Typically GRBL with BlackBox. If using Duet; CAM Only.
+Ooznest,WorkBee 1500x1500,grbl,GRBL (Duet optional),full,Typically GRBL with BlackBox. If using Duet; CAM Only.
+Ooznest,WorkBee Z1+,grbl,GRBL / Duet (varies),full,Check which controller you have. GRBL = full; Duet = CAM Only.
+CAMaster,Stinger I,mach,Mach3/Mach4,cam,Typically runs Mach3/Mach4. CAM Only.
+CAMaster,Stinger II,mach,Mach3/Mach4,cam,Runs Mach3/Mach4. CAM Only.
+CAMaster,Stinger III,mach,Mach3/Mach4,cam,Runs Mach3/Mach4. CAM Only.
+CAMaster,Cobra,mach,Mach3/Mach4,cam,Runs Mach3/Mach4. CAM Only.
+Laguna Tools,IQ Pro,other_builtin,Proprietary DSP,unlikely,Laguna uses proprietary control. Not compatible.
+Laguna Tools,Swift,other_builtin,Proprietary DSP,unlikely,Proprietary control. Not compatible.
+Laguna Tools,SmartShop II,other_builtin,Proprietary,unlikely,Proprietary control. Not compatible.
+Shop Sabre,RC 23,mach,Mach3/Mach4,cam,Typically runs Mach3/Mach4. CAM Only.
+Shop Sabre,RC 43,mach,Mach3/Mach4,cam,Runs Mach3/Mach4. CAM Only.
+Shop Sabre,IS Series,other_builtin,Proprietary (Centroid),unlikely,Industrial Centroid controller. Not compatible.
+CNC4Newbie,NewCarve,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Bulkman 3D,WorkBee CNC,grbl,GRBL (xPRO / BlackBox),full,Typically GRBL. Full compatibility.
+Bulkman 3D,LEAD CNC Kit,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Bulkman 3D,QueenBee CNC,grbl,GRBL / FluidNC,full,Typically GRBL or FluidNC. Full compatibility.
+RatRig,V-Core CNC,grbl,GRBL / FluidNC,full,Check firmware — GRBL/FluidNC = full support.
+Creality,CP-01,other_builtin,Creality proprietary (Marlin-based),maybe,Marlin-based proprietary controller. Limited compatibility.
+Sainsmart,Coreception,grbl,GRBL,full,GRBL when in CNC mode. Full compatibility.
+PrintNC,PrintNC,varies,Varies (commonly FluidNC; grblHAL; LinuxCNC),depends,DIY design — compatibility depends on your controller. GRBL/grblHAL/FluidNC = full. LinuxCNC/Mach3 = CAM Only.
+MPCNC,Mostly Printed CNC (V1 Engineering),varies,GRBL / Marlin (varies),depends,GRBL builds = full support. Marlin builds = limited compatibility. Check your firmware.
+Root CNC,Root CNC 3,grbl,GRBL,full,Typically GRBL-based. Full compatibility.
+DIY,Arduino + CNC Shield,grbl,GRBL,full,Standard GRBL on Arduino Uno/Nano. Full compatibility.
+DIY,Teensy + grblHAL,grblhal,grblHAL,full,grblHAL firmware. Full compatibility.
+DIY,ESP32 + FluidNC,fluidnc,FluidNC,full,FluidNC. Full compatibility.
+xTool,D1,grbl,GRBL-based,full,GRBL-based controller. Primarily a laser but CNC capable. Full compatibility in CNC mode.
+xTool,D1 Pro,grbl,GRBL-based,full,GRBL-based. Full compatibility in CNC mode.
+Various,Any machine with GRBL ≤1.1,grbl,GRBL ≤1.1,full,GRBL is fully supported. Full CAD; CAM; and Control.
+Various,Any machine with grblHAL,grblhal,grblHAL,full,grblHAL is fully supported. Full CAD; CAM; and Control.
+Various,Any machine with GRBL-STM,grblstm,GRBL-STM,full,GRBL-STM is fully supported. Full compatibility.
+Various,Any machine with FluidNC,fluidnc,FluidNC,full,FluidNC is fully supported. Full CAD; CAM; and Control.
+Various,Any machine with Smoothieware,smoothieware,Smoothieware,full,Smoothieware support is a Labs feature (testing). Full CAD; CAM; and Control.
+Various,Any machine with Mach3,mach,Mach3,cam,CAM Only. Export GCode and transfer to your machine.
+Various,Any machine with Mach4,mach,Mach4,cam,CAM Only. Export GCode and transfer.
+Various,Any machine with LinuxCNC,linuxcnc,LinuxCNC,cam,CAM Only. Export GCode and transfer.
+Various,Any machine with UCCNC,uccnc,UCCNC,cam,CAM Only. Export GCode and transfer.
+Various,Any machine with Duet / RRF,duet,Duet / RepRapFirmware,cam,CAM Only. Export GCode and transfer.
+Various,Any machine with Masso controller,masso,Masso,cam,CAM Only. Export GCode and transfer.
+Various,Any machine with Woodpecker board,grbl,GRBL (Woodpecker CNC board),full,Woodpecker boards run GRBL. Full compatibility.
+Various,Any machine with xPRO V5 controller,fluidnc,FluidNC (Spark Concepts xPRO V5),full,xPRO V5 runs FluidNC. Full compatibility.
+Grizzly,G0704 (CNC converted),varies,Typically Mach3 or LinuxCNC after conversion,cam,Common CNC conversion uses Mach3 or LinuxCNC. CAM Only.
+Grizzly,G0876,other_builtin,Proprietary DSP,unlikely,Proprietary DSP controller. Not compatible.
+Powermatic,PM-2x4SPK,other_builtin,Proprietary,unlikely,Proprietary controller. Not compatible.
+Shaper,Origin,other_builtin,Shaper proprietary (handheld CNC),unlikely,Completely different paradigm — handheld CNC with proprietary system. Not compatible.
+Shaper,Origin Plus,other_builtin,Shaper proprietary,unlikely,Proprietary system. Not compatible.
+Tormach,PCNC 440,other_builtin,PathPilot (LinuxCNC-based),cam,PathPilot is LinuxCNC-based. MillMage can generate GCode (CAM Only) but cannot directly control.
+Tormach,PCNC 770,other_builtin,PathPilot (LinuxCNC-based),cam,PathPilot/LinuxCNC. CAM Only.
+Tormach,PCNC 1100,other_builtin,PathPilot (LinuxCNC-based),cam,PathPilot/LinuxCNC. CAM Only.
+Tormach,24R,other_builtin,PathPilot (LinuxCNC-based),cam,PathPilot/LinuxCNC. CAM Only.
+Legacy,Maverick,other_builtin,Proprietary,unlikely,Proprietary controller. Not compatible.
+Probotix,Nebula,linuxcnc,LinuxCNC,cam,Runs LinuxCNC. CAM Only.
+Probotix,Comet,linuxcnc,LinuxCNC,cam,Runs LinuxCNC. CAM Only.
+Probotix,Fireball V90,linuxcnc,LinuxCNC,cam,Runs LinuxCNC. CAM Only.
+Comgrow,ROBO CNC,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Comgrow,Z1,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Genmitsu,PROVerXL 4030 V2,grbl,GRBL (customized),full,Customized GRBL. Full compatibility.
+EleksMaker,EleksMill,grbl,GRBL (Mana board),full,Runs GRBL on Mana board. Full compatibility.
+Shapeoko,Shapeoko 1 (Original),grbl,GRBL 0.8/0.9 (Arduino + GShield),full,Very old GRBL — may need firmware update for best results.
+Various (Chinese),Machine with NC Studio controller,other_builtin,NC Studio / Weihong,unlikely,NC Studio/Weihong is a proprietary Chinese DSP controller. Not compatible with MillMage.
+Various (Chinese),Machine with DSP A11/A15/A18 controller,other_builtin,RichAuto DSP,cam,RichAuto DSP controller. CAM Only — use LinuxCNC flavor. Requires metric units. Needs to be manually set to accept feed and speed commands from G-Code in the controller.
+Various (Chinese),Machine with DSP 0501 controller,other_builtin,DSP 0501 (DDCSV),cam,DDCS-based controller. CAM Only — use LinuxCNC G-Code flavor.
+Donek Tools,Drag Knife CNC,grbl,GRBL (typically on Shapeoko/X-Carve),full,If running on a GRBL machine; full compatibility.
+Longmill,Benchtop CNC,grbl,GRBL,full,Same as Sienci LongMill. GRBL firmware.
+WorkBee,CNC Router Kit,grbl,GRBL (BlackBox / xPRO),full,GRBL or FluidNC. Full compatibility.
+QueenBee,CNC Router Kit,grbl,GRBL / FluidNC,full,GRBL or FluidNC. Full compatibility.
+LUNYEE,3018 PRO MAX (500W),grbl,GRBL (offline controller),full,All-metal 500W build with GRBL offline control. Full compatibility.
+LUNYEE,3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+LUNYEE,3018 PRO Ultra,grbl,GRBL,full,GRBL firmware. Full compatibility.
+LUNYEE,4040 PRO,grbl,GRBL,full,Larger 400x400mm GRBL machine. Full compatibility.
+LUNYEE,CNC 3020,grbl,GRBL,full,GRBL firmware. Full compatibility.
+CNCTOPBAOS,3018-PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+CNCTOPBAOS,3018-PRO-MAX,grbl,GRBL (offline controller),full,GRBL with offline controller. Full compatibility.
+CNCTOPBAOS,1610 PRO,grbl,GRBL,full,Compact 160x100mm GRBL machine. Full compatibility.
+CNCTOPBAOS,3018 Pro 2-in-1 (with laser),grbl,GRBL (offline controller),full,GRBL firmware with dual spindle/laser. Full compatibility.
+CNCTOPBAOS,CNC 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+RATTMMOTOR,3018-PRO,grbl,GRBL (upgraded control board),full,GRBL with upgraded board and emergency stop. Full compatibility.
+RATTMMOTOR,CNC 3018 DIY Kit,grbl,GRBL,full,GRBL firmware. Full compatibility.
+RATTMMOTOR,3018 PRO MAX,grbl,GRBL,full,GRBL firmware. Full compatibility.
+RATTMMOTOR,CNC 1610,grbl,GRBL,full,GRBL firmware. Full compatibility.
+MYSWEETY,CNC 3020 PLUS (500W),grbl,GRBL,full,500W spindle with GRBL control. Full compatibility.
+MYSWEETY,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+MYSWEETY,CNC 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+MYSWEETY,CNC 1610 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+AnoleX,4030-Evo Ultra 2,grbl,GRBL,full,All-metal with 800W trim router. GRBL control. Full compatibility.
+AnoleX,4030-Evo,grbl,GRBL,full,GRBL firmware. Full compatibility.
+AnoleX,3020 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+NymoLabs,NBS-6040,grbl,GRBL v1.1 (TFT touchscreen),full,Open-source GRBL v1.1 with touchscreen. Full compatibility.
+NymoLabs,NBS-3020,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Genmitsu,3020-PRO Ultra (710W),grbl,GRBL,full,710W spindle; all-metal. GRBL control. Full compatibility.
+Genmitsu,4040-PRO MAX (710W trimmer),grbl,GRBL,full,710W trimmer with linear rails. GRBL. Full compatibility.
+Genmitsu,4040 Reno,grbl,GRBL,full,Belt-driven GRBL machine. Full compatibility.
+Genmitsu,Cubiko,grbl,GRBL (WiFi + APP supported),full,Smart desktop CNC with WiFi. GRBL-based. Full compatibility.
+Genmitsu,3040 (Y-axis extension of 3018),grbl,GRBL,full,Extended 3018 with GRBL. Full compatibility.
+Genmitsu,5040 CNC Router,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Masuter 3S,grbl,GRBL (NEMA 23 closed-loop),full,Closed-loop steppers with GRBL. Full compatibility.
+FoxAlien,XE-Ultra 8080,grbl,GRBL (NEMA 23 closed-loop),full,Large 800x800mm with GRBL. Full compatibility.
+FoxAlien,CNC 4040-XE,grbl,GRBL,full,GRBL firmware. Full compatibility.
+FoxAlien,Masuter S,grbl,GRBL,full,GRBL firmware. Full compatibility.
+VEVOR,CNC 3018 (300W),grbl,GRBL,full,Budget 300W GRBL machine. Full compatibility.
+VEVOR,CNC 3020,grbl,GRBL,full,GRBL firmware. Full compatibility.
+VEVOR,CNC 4040,grbl,GRBL,full,GRBL firmware. Full compatibility.
+VEVOR,CNC 3040 (800W),varies,Mach3 or GRBL (varies by listing),depends,Check which controller shipped with yours. Mach3 = CAM Only; GRBL = Full.
+VEVOR,CNC 6040 (1500W),mach,Mach3 (USB),cam,Larger VEVOR machines typically use Mach3. CAM Only.
+VEVOR,CNC 6040 (2200W),mach,Mach3 (USB),cam,Mach3 control. CAM Only.
+Cenoz,Upgrade 3018 Pro,grbl,GRBL,full,GRBL with integrated driver chip. Full compatibility.
+Cenoz,CNC 3018 Pro MAX,grbl,GRBL,full,GRBL firmware. Full compatibility.
+IKRANBIRD,3018 PRO,grbl,GRBL 1.1f,full,GRBL 1.1f control board. Full compatibility.
+IKRANBIRD,3018 PRO MAX,grbl,GRBL 1.1f,full,GRBL 1.1f. Full compatibility.
+Beautystar,CNC 3018 Pro,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Beautystar,CNC 3018 Pro MAX,grbl,GRBL,full,GRBL firmware. Full compatibility.
+HUANYANG,CNC 3040 (800W),mach,Mach3 (parallel port/USB),cam,Chinese 3040 with Mach3. CAM Only.
+HUANYANG,CNC 6040 (1500W),mach,Mach3,cam,Mach3 control. CAM Only.
+HUANYANG,CNC 6040 (2200W),mach,Mach3,cam,Mach3 control. CAM Only.
+Generic (Chinese),CNC 3040T (4-axis),mach,Mach3 (USB/parallel),cam,Most 3040T 4-axis machines use Mach3. CAM Only.
+Generic (Chinese),CNC 3040Z (3-axis),mach,Mach3,cam,Mach3 control. CAM Only.
+Generic (Chinese),CNC 6040 (3-axis; USB),mach,Mach3 (USB adapter),cam,Mach3 USB. CAM Only.
+Generic (Chinese),CNC 6040 (4-axis),mach,Mach3,cam,Mach3 control. CAM Only.
+Generic (Chinese),CNC 6090 (3-axis),mach,Mach3 or DSP,cam,Usually Mach3 or DSP. CAM Only if Mach3. Not compatible if DSP.
+Generic (Chinese),CNC 6090 (4-axis; 2.2kW),mach,Mach3,cam,Mach3 control. CAM Only.
+Generic (Chinese),CNC 3020T,mach,Mach3 (parallel),cam,Older Mach3 parallel port design. CAM Only.
+Generic (Chinese),CNC 1325 (4x8 industrial),other_builtin,DSP / NC Studio / Weihong,unlikely,Chinese industrial 4x8 machines typically use NC Studio or DSP. Not compatible.
+Generic (Chinese),CNC 1530 (5x10 industrial),other_builtin,DSP / NC Studio,unlikely,Industrial DSP controller. Not compatible.
+Makera,Carvera,grbl,GRBL-based (custom),full,GRBL-based with auto tool change. Full compatibility.
+Makera,Carvera Air,grbl,GRBL-based (custom),full,Compact GRBL-based CNC. Full compatibility.
+SainSmart,Genmitsu 3018-PROVer Mach3,grbl,GRBL (Mach3 compatible GCode),full,Despite name; this is GRBL-controlled. Full compatibility.
+Preenex,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Preenex,CNC 3018,grbl,GRBL,full,GRBL firmware. Full compatibility.
+TOPQSC,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Newker,CNC 3040 (GRBL version),grbl,GRBL,full,GRBL version of 3040. Full compatibility.
+Newker,CNC 3040 (Mach3 version),mach,Mach3,cam,Mach3 version. CAM Only.
+Generic (AliExpress),CNC 3018 with Woodpecker board,grbl,GRBL (Woodpecker 3.4),full,Woodpecker boards run GRBL. Full compatibility.
+Generic (AliExpress),CNC 3018 PRO with offline controller,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Generic (AliExpress),CNC 2418 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Generic (AliExpress),CNC 1610 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Generic (AliExpress),CNC 5040 (GRBL version),grbl,GRBL,full,GRBL version. Full compatibility.
+Generic (AliExpress),CNC 4030 (GRBL version),grbl,GRBL,full,GRBL version. Full compatibility.
+Generic (AliExpress),Mini CNC 1208,grbl,GRBL,full,Small GRBL machine. Full compatibility.
+Generic (AliExpress),Mini CNC 2417,grbl,GRBL,full,Small GRBL machine. Full compatibility.
+Various (AliExpress),CNC with ESP32 FluidNC board,fluidnc,FluidNC (ESP32),full,FluidNC is fully supported. Full compatibility.
+Various (AliExpress),CNC with MKS DLC32 board,grbl,GRBL (ESP32-based),full,GRBL on ESP32. Full compatibility.
+Various (AliExpress),CNC with CNC Shield V3 + Arduino Uno,grbl,GRBL,full,Standard GRBL setup. Full compatibility.
+Various (AliExpress),CNC with CNC Shield V4 + Nano,grbl,GRBL,full,Standard GRBL setup. Full compatibility.
+Zhong Hua Jiang,CNC 6040 (air-cooled spindle),mach,Mach3,cam,Mach3 control. CAM Only.
+Zhong Hua Jiang,CNC 6090 (water-cooled 2.2kW),mach,Mach3,cam,Mach3 control. CAM Only.
+Two Trees,TTC 3018 Pro Max,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Two Trees,TTC 4040,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Generic (Amazon),CNC 4040 PRO (500W; steel frame),grbl,GRBL,full,GRBL with steel HSS frame. Full compatibility.
+Generic (Amazon),CNC 4040 PRO (100W desktop),grbl,GRBL (USB),full,GRBL firmware. Full compatibility.
+Generic (Amazon),CNC 3018 (any brand; GRBL),grbl,GRBL,full,Nearly all 3018 machines sold on Amazon/AliExpress use GRBL. Full compatibility.
+Generic (Amazon),CNC 1610 (any brand; GRBL),grbl,GRBL,full,Nearly all 1610 machines use GRBL. Full compatibility.
+Generic (Amazon),CNC 2418 (any brand; GRBL),grbl,GRBL,full,Nearly all 2418 machines use GRBL. Full compatibility.
+SainSmart,Genmitsu CNC 3018 (Carveco Maker bundle),grbl,GRBL (with Carveco Maker CAM),full,GRBL firmware with bundled Carveco CAM software. Full compatibility.
+Ortur,Aufero CNC (Laser Frame 2),grbl,GRBL,full,GRBL firmware. Full compatibility in CNC mode.
+Totem,CNC 3018 S1,grbl,GRBL,full,GRBL firmware. Full compatibility.
+Sovol,SO-3,grbl,GRBL-based,full,GRBL-based. Full compatibility.
+Longer,CNC Router Kit,grbl,GRBL,full,GRBL firmware. Full compatibility.
+CRONOS,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+CRONOS,CNC 3040,grbl,GRBL,full,GRBL version. Full compatibility.
+YOFULY,CNC 3018 PRO MAX,grbl,GRBL,full,GRBL firmware. Full compatibility.
+YOFULY,CNC 3018 PRO,grbl,GRBL,full,GRBL firmware. Full compatibility.
+SainSmart,Genmitsu CNC 3018 (Original),grbl,GRBL,full,Original 3018 with GRBL. Full compatibility.
