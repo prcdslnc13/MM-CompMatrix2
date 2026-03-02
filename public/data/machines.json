@@ -2171,17 +2171,17 @@
     "brand": "Makera",
     "model": "Carvera",
     "firmware": "grbl",
-    "controller": "GRBL-based (custom)",
+    "controller": "Smoothieware-based (Custom)",
     "compatLevel": "full",
-    "notes": "GRBL-based with auto tool change. Full compatibility."
+    "notes": "Smoothieware-based with auto tool change. Full compatibility."
   },
   {
     "brand": "Makera",
     "model": "Carvera Air",
     "firmware": "grbl",
-    "controller": "GRBL-based (custom)",
+    "controller": "Smoothieware-based (Custom)",
     "compatLevel": "full",
-    "notes": "Compact GRBL-based CNC. Full compatibility."
+    "notes": "Compact Smoothieware-based CNC. Full compatibility."
   },
   {
     "brand": "SainSmart",
