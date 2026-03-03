@@ -55,7 +55,49 @@ export default function App() {
         <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>Search {machines.length} machines{isAdmin ? " or edit the database" : ""}.</p>
       </div>
 
-      {sel ? <DetailCard machine={sel} onBack={() => setSel(null)} /> : <SearchInput machines={machines} onSelect={setSel} />}
+      <SearchInput machines={machines} onSelect={setSel} />
+
+      {sel && (
+        <div
+          onClick={() => setSel(null)}
+          style={{
+            position: "fixed", inset: 0,
+            background: "rgba(0,0,0,0.45)",
+            zIndex: 1000,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            padding: "20px 16px",
+            animation: "backdropIn .2s ease",
+          }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{
+              background: "#fff",
+              borderRadius: 14,
+              padding: "24px 24px 20px",
+              width: "100%",
+              maxWidth: 560,
+              maxHeight: "90vh",
+              overflowY: "auto",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
+              animation: "modalIn .2s ease",
+              position: "relative",
+            }}
+          >
+            <button
+              onClick={() => setSel(null)}
+              aria-label="Close"
+              style={{
+                position: "absolute", top: 12, right: 14,
+                background: "none", border: "none",
+                fontSize: 20, lineHeight: 1, cursor: "pointer",
+                color: "#9ca3af", padding: "2px 6px", borderRadius: 6,
+              }}
+            >✕</button>
+            <DetailCard machine={sel} onBack={() => setSel(null)} />
+          </div>
+        </div>
+      )}
 
       <div style={{ marginTop: 24, borderTop: "1px solid #e5e7eb", paddingTop: 20 }}>
         <h2 style={{ fontSize: 16, fontWeight: 700, color: "#111827", margin: "0 0 12px" }}>{isAdmin ? "Edit Machine Database" : "Full Machine Database"}</h2>
@@ -84,7 +126,11 @@ export default function App() {
         )}
       </div>
 
-      <style>{`@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}`}</style>
+      <style>{`
+        @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes backdropIn{from{opacity:0}to{opacity:1}}
+        @keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(0.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+      `}</style>
     </div>
   );
 }
