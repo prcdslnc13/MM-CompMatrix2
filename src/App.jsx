@@ -38,17 +38,8 @@ export default function App() {
         />
       )}
 
-      {/* Mode toggle */}
-      <div style={{ display: "flex", justifyContent: "center", marginBottom: 16 }}>
-        <div style={{ display: "inline-flex", background: "#f3f4f6", borderRadius: 8, padding: 3 }}>
-          {[["public", "Public"], ["admin", "Admin"]].map(([v, l]) => (
-            <button key={v} onClick={() => handleModeToggle(v)} style={{ padding: "7px 16px", fontSize: 13, fontWeight: 600, border: "none", borderRadius: 6, cursor: "pointer", background: mode === v ? "#fff" : "transparent", color: mode === v ? "#111827" : "#6b7280", boxShadow: mode === v ? "0 1px 3px rgba(0,0,0,0.1)" : "none", transition: "all .15s" }}>{l}</button>
-          ))}
-        </div>
-      </div>
-
       {isAdmin && <div style={{ background: "#fef3c7", border: "1px solid #fde68a", borderRadius: 8, padding: "8px 14px", fontSize: 12, color: "#92400e", marginBottom: 16, textAlign: "center" }}>
-        <strong>Admin Mode</strong> — Edit your machine database here. Changes are saved automatically. Switch to <strong>Public</strong> to see the read-only version.
+        <strong>Admin Mode</strong> — Edit your machine database here. Changes are saved automatically.
       </div>}
 
       <div style={{ textAlign: "center", marginBottom: 20 }}>
@@ -131,6 +122,14 @@ export default function App() {
           />
         )}
       </div>
+
+      <footer style={{ textAlign: "center", padding: "32px 0 12px", borderTop: "1px solid #e5e7eb", marginTop: 32 }}>
+        {isAdmin ? (
+          <button onClick={() => setMode("public")} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 12, color: "#9ca3af", textDecoration: "underline", textUnderlineOffset: 2 }}>Exit Admin</button>
+        ) : (
+          <button onClick={() => handleModeToggle("admin")} style={{ background: "none", border: "none", cursor: "pointer", fontSize: 12, color: "#9ca3af", textDecoration: "underline", textUnderlineOffset: 2 }}>Admin</button>
+        )}
+      </footer>
 
       <style>{`
         @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
