@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { CC } from "../data/compatLevels";
 import { score } from "../data/scoring";
+import { theme } from "../theme";
 import EditRow from "./EditRow";
 
 const Btn = ({ children, bg = "#f3f4f6", color = "#374151", onClick }) => (
@@ -50,7 +51,7 @@ export default function AdminTable({ machines, tblFilter, setTblFilter, tblCompa
           <option value="depends">{"\u2699"} Varies ({machines.filter(m => m.compatLevel === "depends").length})</option>
           <option value="unlikely">{"\u2717"} N/C ({machines.filter(m => m.compatLevel === "unlikely").length})</option>
         </select>
-        <Btn bg="#6366f1" color="#fff" onClick={addRow}>+ Add</Btn>
+        <Btn bg={theme.brand.primary} color="#fff" onClick={addRow}>+ Add</Btn>
         <Btn onClick={onImportCSV}>{"\u2B06"} Import CSV</Btn>
         <Btn onClick={onExportCSV}>{"\u2B07"} Export CSV</Btn>
         <Btn onClick={onImportJSON}>{"\u2B06"} Import JSON</Btn>

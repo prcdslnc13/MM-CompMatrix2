@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { theme } from "../theme";
 
 function getAdminPassword() {
   return import.meta.env.VITE_ADMIN_PASSWORD || window.__ENV__?.ADMIN_PASSWORD || "";
@@ -34,7 +35,7 @@ export default function PasswordPrompt({ onSuccess, onCancel }) {
         {error && <p style={{ fontSize: 12, color: "#dc2626", margin: "0 0 8px" }}>Incorrect password.</p>}
         <div style={{ display: "flex", gap: 8, justifyContent: "flex-end" }}>
           <button type="button" onClick={onCancel} style={{ border: "1px solid #d1d5db", borderRadius: 6, padding: "8px 16px", fontSize: 13, fontWeight: 500, background: "#fff", color: "#374151", cursor: "pointer" }}>Cancel</button>
-          <button type="submit" style={{ border: "none", borderRadius: 6, padding: "8px 16px", fontSize: 13, fontWeight: 600, background: "#6366f1", color: "#fff", cursor: "pointer" }}>Enter</button>
+          <button type="submit" style={{ border: "none", borderRadius: 6, padding: "8px 16px", fontSize: 13, fontWeight: 600, background: theme.brand.primary, color: "#fff", cursor: "pointer" }}>Enter</button>
         </div>
       </form>
     </div>

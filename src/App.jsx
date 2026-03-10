@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useMachines } from "./hooks/useMachines";
+import { theme } from "./theme";
 import SearchInput from "./components/SearchInput";
 import DetailCard from "./components/DetailCard";
 import PublicTable from "./components/PublicTable";
@@ -26,10 +27,10 @@ export default function App() {
     setSel(null);
   };
 
-  if (loading) return <div style={{ fontFamily: "-apple-system,sans-serif", textAlign: "center", padding: 60, color: "#6b7280" }}>Loading machine database...</div>;
+  if (loading) return <div style={{ fontFamily: theme.font.body, textAlign: "center", padding: 60, color: "#6b7280" }}>Loading machine database...</div>;
 
   return (
-    <div style={{ fontFamily: "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif", maxWidth: 1100, margin: "0 auto", padding: "20px 16px" }}>
+    <div style={{ fontFamily: theme.font.body, maxWidth: 1100, margin: "0 auto", padding: "20px 16px" }}>
       {showPwPrompt && (
         <PasswordPrompt
           onSuccess={() => { setAuthed(true); setShowPwPrompt(false); setMode("admin"); setSel(null); }}
@@ -51,8 +52,13 @@ export default function App() {
       </div>}
 
       <div style={{ textAlign: "center", marginBottom: 20 }}>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: "#111827", margin: "0 0 4px" }}>Is my CNC compatible with MillMage?</h1>
-        <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>Search {machines.length} machines{isAdmin ? " or edit the database" : ""}.</p>
+        <div style={{ marginBottom: 10 }}>
+          <img src="/logo.svg" alt="MillMage" style={{ height: 32 }} />
+        </div>
+        <p style={{ fontSize: 14, color: "#374151", margin: "0 0 4px", maxWidth: 540, marginLeft: "auto", marginRight: "auto", lineHeight: 1.6 }}>Use this tool to find out how well MillMage works with your CNC router.</p>
+        <p style={{ fontSize: 14, color: "#374151", margin: "0 0 12px", maxWidth: 540, marginLeft: "auto", marginRight: "auto", lineHeight: 1.6 }}>We've covered many of the most popular machines available today.</p>
+        <p style={{ fontSize: 13, color: "#6b7280", margin: "0 0 4px", maxWidth: 540, marginLeft: "auto", marginRight: "auto", lineHeight: 1.6 }}>Don't see your machine listed? Reach out to us at <a href="mailto:support@millmagesoftware.com" style={{ color: theme.brand.primary, textDecoration: "underline", textUnderlineOffset: 2 }}>Support@MillMageSoftware.com</a></p>
+        <p style={{ fontSize: 13, color: "#6b7280", margin: 0, maxWidth: 540, marginLeft: "auto", marginRight: "auto", lineHeight: 1.6 }}>We'll look into it, let you know what level of compatibility to expect, and get it added!</p>
       </div>
 
       <SearchInput machines={machines} onSelect={setSel} />
